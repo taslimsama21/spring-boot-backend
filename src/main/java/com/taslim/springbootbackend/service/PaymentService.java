@@ -6,7 +6,6 @@ import com.taslim.springbootbackend.model.PaymentDetail;
 import com.taslim.springbootbackend.repository.PaymentRepo;
 import com.taslim.springbootbackend.repository.PaymentRepository;
 import com.taslim.springbootbackend.utils.AppConstants;
-import com.taslim.springbootbackend.utils.PaymentStatus;
 import com.taslim.springbootbackend.utils.PaymentUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

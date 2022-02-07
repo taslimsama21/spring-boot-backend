@@ -22,7 +22,7 @@ public class PaymentUtil {
         String txnId = hashCal("SHA-256", randomId).substring(0, 12);
         paymentDetail.setTxnId(txnId);
         String hash = "";
-        //String otherPostParamSeq = "phone|surl|furl|lastname|curl|address1|address2|city|state|country|zipcode|pg";
+
         String hashSequence = "key|txnid|amount|productinfo|firstname|email|||||||||||";
         hashString = hashSequence.concat(paymentSalt);
         hashString = hashString.replace("key", paymentKey);

@@ -22,9 +22,6 @@ public class SubscriptionService {
 
     public ResponseEntity<String> addSubscription(Subscription subscription){
 
-       /* if (!userRepository.existsById(Long.parseLong(subscription.getUserId()))){
-            return ResponseEntity.ok("Please create account to subscribe!!");
-        }*/
         if (subscriptionRepository.existsByUserId(subscription.getUserId())){
             return ResponseEntity.ok("You already have subscription!!");
         }
